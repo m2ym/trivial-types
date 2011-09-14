@@ -1,7 +1,6 @@
 (in-package :cl-user)
 
-(defpackage :cl-more-types
-  (:nicknames :more-types)
+(defpackage :trivial-types
   (:use :cl)
   (:export ;; combinators.lisp
            #:non-nil

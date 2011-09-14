@@ -1,10 +1,10 @@
 (in-package :cl-user)
 
-(defpackage :cl-more-types-asd
+(defpackage :trivial-types-asd
   (:use :cl :asdf))
-(in-package :cl-more-types-asd)
+(in-package :trivial-types-asd)
 
-(defsystem :cl-more-types
+(defsystem :trivial-types
   :version "0.1"
   :author "Tomohiro Matsuyama"
   :license "LLGPL"

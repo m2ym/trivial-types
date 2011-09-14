@@ -1,4 +1,4 @@
-(in-package :cl-more-types)
+(in-package :trivial-types)
 
 (declaim (inline proper-list-p
                  property-list-p

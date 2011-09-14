@@ -1,4 +1,4 @@
-(in-package :cl-more-types)
+(in-package :trivial-types)
 
 (defun file-associated-stream-p (stream)
   (declare (optimize . #.*standard-optimize-qualities*))

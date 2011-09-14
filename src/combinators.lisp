@@ -1,4 +1,4 @@
-(in-package :cl-more-types)
+(in-package :trivial-types)
 
 (deftype non-nil (&optional type)
   (if type

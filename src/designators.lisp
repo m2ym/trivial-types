@@ -1,4 +1,4 @@
-(in-package :cl-more-types)
+(in-package :trivial-types)
 
 (deftype character-designator ()
   '(or (string 1)

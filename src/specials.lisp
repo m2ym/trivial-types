@@ -1,4 +1,4 @@
-(in-package :cl-more-types)
+(in-package :trivial-types)
 
 (defvar *standard-optimize-qualities*
   '((speed 3)
