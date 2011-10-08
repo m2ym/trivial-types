@@ -2,13 +2,7 @@
 
 (defpackage :trivial-types
   (:use :cl)
-  (:export ;; combinators.lisp
-           #:non-nil
-           ;; streams.lisp
-           #:file-associated-stream-p
-           #:file-associated-stream
-           ;; lists.lisp
-           #:proper-list-p
+  (:export #:proper-list-p
            #:proper-list
            #:property-list-p
            #:property-list
@@ -16,7 +10,7 @@
            #:association-list
            #:tuplep
            #:tuple
-           ;; designators.lisp
+
            #:character-designator
            #:function-designator
            #:file-position-designator
@@ -24,4 +18,11 @@
            #:package-designator
            #:pathname-designator
            #:stream-designator
-           #:string-designator))
+           #:string-designator
+
+           #:file-associated-stream-p
+           #:file-associated-stream
+
+           #:non-nil
+
+           #:type-specifier-p))
