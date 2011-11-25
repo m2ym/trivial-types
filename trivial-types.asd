@@ -40,7 +40,7 @@ write a function that takes a package-oid argument like:
   :license "LLGPL"
   :components ((:module "src"
                 :serial t
-                :components ((:file "packages")
+                :components ((:file "package")
                              (:file "specials")
                              (:file "lists")
                              (:file "designators")
