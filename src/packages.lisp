@@ -25,4 +25,5 @@
 
            #:non-nil
 
-           #:type-specifier-p))
+           #:type-specifier-p
+           #:type-expand))

@@ -204,6 +204,12 @@ Examples:
 
 Returns true if TYPE-SPECIFIER is a valid type specfiier.
 
+## [Function] type-expand
+
+    type-expand type-specifier &optional env
+
+Expand TYPE-SPECIFIER in the lexical environment ENV.
+
 Authors
 -------
 
