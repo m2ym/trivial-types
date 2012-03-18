@@ -116,7 +116,7 @@ Examples:
 
 (deftype tuple (&rest element-types)
   "Equivalent to `(and list (cons ARG1 (cons ARG2 (cons ARG3 ...))))`
-where ARGn is each element of ELEMENTS-TYPES.
+where ARGn is each element of ELEMENT-TYPES.
 
 Examples:
 
