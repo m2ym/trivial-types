@@ -97,6 +97,11 @@ Examples:
     (typep '((:a . 1) (:b . 2)) '(association-list string)) => T"
   `(proper-list (cons ,key-type ,value-type)))
 
+(defun tuple (&rest args)
+  "Exactly same as LIST."
+  (declare (optimize . #.*standard-optimize-qualities*))
+  args)
+
 (defun tuplep (object)
   "Returns true if OBJECT is a tuple, meaning a proper list.
 
