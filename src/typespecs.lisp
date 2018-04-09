@@ -7,6 +7,9 @@
         #+sbcl (return (sb-ext:valid-type-specifier-p type-specifier))
         #+openmcl (return (ccl:type-specifier-p type-specifier))
         #+ecl (return (c::valid-type-specifier type-specifier))
+        #+clisp (return (null
+                         (nth-value 1 (ignore-errors
+                                       (ext:type-expand type-specifier)))))
         (error "Not implemented"))))
 
 (defun type-expand (type-specifier &optional env)
