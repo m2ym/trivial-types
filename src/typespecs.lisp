@@ -10,10 +10,13 @@
         #+clisp (return (null
                          (nth-value 1 (ignore-errors
                                        (ext:type-expand type-specifier)))))
-        (error "Not implemented"))))
+        (error "TYPE-SPECIFIER-P not available for this implementation"))))
 
 (defun type-expand (type-specifier &optional env)
   "Expand TYPE-SPECIFIER in the lexical environment ENV."
-  #+sbcl (sb-ext::typexpand type-specifier env)
-  #+openmcl (ccl::type-expand type-specifier env)
-  #-(or sbcl openmcl) type-specifier)
+  (or (block nil
+        #+sbcl (return (sb-ext::typexpand type-specifier env))
+        #+openmcl (return (ccl::type-expand type-specifier env))
+        #+clisp (return (ext:type-expand type-specifier)))
+      (prog1 type-specifier
+        (warn "TYPE-EXPAND not available for this implementation"))))
